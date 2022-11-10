@@ -58,7 +58,7 @@ function DropManager() {
               >
                 {!isDragActive && (
                   <h4 className='w-[250px] p-6 rounded-lg mx-auto border-dashed border-4 border-zinc-400'>
-                    Drop image here
+                    Drop image here *
                   </h4>
                 )}
               </div>
