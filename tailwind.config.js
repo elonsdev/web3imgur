@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'day': "url('../public/camping-day.jpg')",
-        'night': "url('../public/camping-night.jpg')",
-      }
-    }
+        day: "url('../public/camping-day.jpg')",
+        night: "url('../public/camping-night.jpg')",
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [require("tailwind-scrollbar-hide")],
+};

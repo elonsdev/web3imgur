@@ -103,7 +103,7 @@ function DropManager() {
             <h4 className='py-4 mb-6 bg-zinc-700 text-sm'>Share Options</h4>
             <h4 className='text-left mx-6 tracking-wide'>Share Link</h4>
             <div className='flex justify-center py-2'>
-              <p className='bg-zinc-900 p-3 rounded-l w-[320px] overflow-auto'>
+              <p className='bg-zinc-900 p-3 rounded-l w-[320px] overflow-auto scrollbar-hide'>
                 {!link ? `...loading` : `${link}`}
               </p>
               <button
@@ -122,7 +122,7 @@ function DropManager() {
               BBCode (Forums)
             </h4>
             <div className='flex justify-center py-2'>
-              <p className='bg-zinc-900 p-3 rounded-l w-[320px] overflow-auto'>
+              <p className='bg-zinc-900 p-3 rounded-l w-[320px] overflow-auto scrollbar-hide'>
                 {!link ? `...loading` : `[img]${link}[/img]`}
               </p>
               <button
@@ -140,7 +140,7 @@ function DropManager() {
               Markdown (Reddit)
             </h4>
             <div className='flex justify-center py-2'>
-              <p className='bg-zinc-900 p-3 rounded-l whitespace-nowrap w-[320px] overflow-auto'>
+              <p className='bg-zinc-900 p-3 rounded-l whitespace-nowrap w-[320px] overflow-auto scrollbar-hide'>
                 {!link ? `...loading` : `[web3imgur](${link})`}
               </p>
               <button
