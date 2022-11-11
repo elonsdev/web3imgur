@@ -51,11 +51,18 @@ function MyApp({ Component, pageProps }) {
             height={200}
             src={Logo}
           />
-          <Link href='./feed'>
-            <button className=' bg-green-500 w-[102px] px-4 py-2 mt-4 text-black font-bold rounded disabled:bg-zinc-500'>
-              FEED
-            </button>
-          </Link>
+          <div>
+            <Link href='./'>
+              <button className='mr-4 bg-green-500 w-[102px] px-4 py-2 mt-4 text-black font-bold rounded disabled:bg-zinc-500'>
+                UPLOAD
+              </button>
+            </Link>
+            <Link href='./feed'>
+              <button className=' bg-green-500 w-[102px] px-4 py-2 mt-4 text-black font-bold rounded disabled:bg-zinc-500'>
+                FEED
+              </button>
+            </Link>
+          </div>
         </nav>
         <WagmiConfig client={wagmiClient}>
           <RainbowKitProvider chains={chains}>
